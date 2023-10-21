@@ -1,12 +1,12 @@
 const container = document.querySelector(".container");
 const refreshBtn = document.querySelector(".refresh-btn");
 
-const maxPaletteboxes = 9;
+const maxPaletteboxes = 12;
 
 const generatePalette = () => {
     container.innerHTML = "";
     for (let i = 0; i < maxPaletteboxes ; i++) {
-    let randomHex = Math.floor(Math.random() * 0xffffff).toString(16);
+    let randomHex = Math.floor(Math.random() * 0xFFFFFF).toString(16);
     randomHex = `#${randomHex.padStart(6, "0")}`;
     
     const color = document.createElement("li");
