@@ -89,8 +89,8 @@ body{
     }
     .refresh-btn{
         margin: 25px 5px 7px 5px;
-        font-size: .8rem;
+        font-size: .9rem;
         font-weight: 500;
-        padding: 8px 12px;
+        padding: 16px 20px;
     }
 }
