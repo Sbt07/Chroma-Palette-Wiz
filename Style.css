@@ -67,10 +67,10 @@ body{
 
 @media (max-width:400px){
     .container{
-        gap: 4px;
-        margin-top: 26px;
-        margin-right: 2px;
-        margin-left: 2px;
+        gap: 3px;
+        margin-top: 46px;
+        margin-right: 3px;
+        margin-left: 3px;
         margin-bottom: 5px;
     }
     .container .color{
