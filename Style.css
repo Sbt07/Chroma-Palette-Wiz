@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Crimson Pro', serif;
+}
+body{
+    background: linear-gradient(to top, #f1f0f0, #ededed);
+}
+.container{
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.container .color{
+    list-style: none;
+    margin: 13px;
+    padding: 9px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 10px 20px rgba(0,0,0,.2);
+    transition: transform .3s ease;
+}
+.color .react-box{
+    width: 185px;
+    height: 188px;
+    border-radius: 8px;
+    background: #9234d0;
+}
+.color .hex-value{
+    display: block;
+    color: #444;
+    margin: 12px 0 8px;
+    font-size: 1.15rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.refresh-btn{
+    margin: 15px 15px 25px 15px;
+    outline: none;
+    color: #333;
+    cursor: pointer;
+    font-size: 1.4rem;
+    font-weight: 550;
+    padding: 12px 20px;
+    background: linear-gradient(45deg, #FFC0CB, #FFD700, #FFEE00, #98FB98, #87CEEB, #DDA0DD, #E6E6FA);
+    border-radius: 10px;
+    border: 2.5px solid #333;
+    box-shadow: 0 15px 25px rgba(0,0,0,.2);
+    transition: transform .3s ease;
+}
+.color:hover .react-box, .refresh-btn:hover{
+    filter: brightness(106%);
+}
+.container .color:active, .refresh-btn:active{
+    transform: scale(.95);
+}
+
+
+@media (max-width:400px){
+    .container{
+        gap: 5px;
+        margin-top: 16px;
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-bottom: 5px;
+    }
+    .container .color{
+        margin: 5px;
+        padding: 9px;
+    }
+    .color .react-box{
+        width: 85px;
+        height: 98px;
+    }
+    .color .hex-value{
+        margin: 3px 0 2px;
+        font-size: .8rem;
+    }
+    .refresh-btn{
+        margin: 5px 5px 7px 5px;
+        font-size: .8rem;
+        font-weight: 500;
+        padding: 8px 12px;
+        border: 2px solid #333;
+    }
+}
